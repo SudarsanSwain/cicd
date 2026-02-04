@@ -32,5 +32,8 @@ sudo dpkg -i codedeploy-agent_1.3.2-1902_ubuntu22.deb
 # List all systemd units that contain "codedeploy" in their name
 systemctl list-units --type=service | grep codedeploy 
 
+# Restart the codedeploy-agent
+sudo systemctl restart codedeploy-agent
+
 # Check the status of the CodeDeploy agent service
 sudo service codedeploy-agent status
