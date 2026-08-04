@@ -11,4 +11,4 @@ hooks:                    # is an array of scripts to be executed at different p
   ApplicationStart:       # specifies a script to be executed after the application has started.
     - location: start_nginx.sh
       timeout: 300
-      runas: root 
+      runas: root
